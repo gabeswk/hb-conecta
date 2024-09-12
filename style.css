@@ -114,6 +114,7 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
 }
 @keyframes slideIn {
     from {
@@ -127,4 +128,6 @@ footer a:hover {
 .animated-iframe {
     animation: slideIn 5s ease-out;
     position: fixed;
+=======
+>>>>>>> 64272902bf1e28a4f7a520b274771d0143f967f3
 }
