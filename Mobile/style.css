@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset básico para garantir consistência entre navegadores */
 * {
     margin: 0;
@@ -161,4 +162,169 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+=======
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh; /* Garante que o corpo ocupa toda a altura da tela */
+}
+
+/* Estilização do topo */
+.topo {
+    background-color: #008000; /* Verde */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.topo h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.menu {
+    position: relative;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+}
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+
+}
+.menu-list li {
+    margin: 0 15px;
+}
+.menu-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.menu-list a:hover {
+    background-color: #555;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-list li {
+        margin: 0px 0;
+    }
+    .menu-list.show {
+        display: flex;
+    }
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #ffa500; /* Laranja */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff8c00; /* Laranja escuro */
+}
+
+/* Estilização do texto do topo */
+.texto {
+    margin-bottom: 20px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+    padding: 15px; /* Adiciona padding ao redor do container do grid */
+    overflow: auto; /* Permite rolagem se necessário */
+    justify-items: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Grid item */
+.grid-item {
+    background-color: white;
+    border: 0.5px solid #ddd; /* Borda menor */
+    border-radius: 8px;
+    padding: 20px; /* Adicionando padding interno para melhorar o espaçamento */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.grid-item:hover {
+    transform: scale(1.01); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    max-width: 100%; 
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 15px;
+    color: #555;
+}
+footer {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+>>>>>>> 64272902bf1e28a4f7a520b274771d0143f967f3
 }
