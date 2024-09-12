@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0px;
+            color: #333;
+        }
+
+        /* Estilização do topo */
+        .topo {
+            background-color: #008000;
+            /* Verde */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .topo h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+        }
+
+        .menu-list {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+
+        }
+
+        .menu-list li {
+            margin: 0 15px;
+        }
+
+        .menu-list a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-list a:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu-list {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-list li {
+                margin: 0px 0;
+            }
+
+            .menu-list.show {
+                display: flex;
+            }
+        }
+
+
+        .button {
+            display: inline-block;
+            background-color: #ffa500;
+            /* Laranja */
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff8c00;
+            /* Laranja escuro */
+        }
+
+        /* Estilização do texto do topo */
+        .texto {
+            margin-bottom: 20px;
+        }
+
+        .paragrafo {
+            text-align: center;
+        }
+
+        .paragrafo p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .paragrafo b {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .paragrafo img {
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        .contact-info {
+            margin: 15px 0;
+        }
+
+        .contact-info img {
+            margin: 10px;
+        }
+
+        .contact-info b {
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            /* Cor verde */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+        <div class="texto">
+            <h1>HB Conectado</h1>
+            <nav class="menu">
+                <div class="menu-toggle" id="menu-toggle">
+                    ☰
+                </div>
+                <ul class="menu-list" id="menu-list">
+                    <li><a class="button" href="index.html">Inicio</a></li>
+                    <li><a class="button" href="corpodocente.html">Corpo Docente</a></li>
+                    <li><a class="button" href="gremio.html">Grêmio</a></li>
+                    <li><a class="button" href="comissões.html">Comissões</a></li>
+                    <li><a class="button" href="quemsomos.html">Quem somos?</a></li>
+                    <li><a class="button" href="redes.html">Nossa Redes Sociais</a></li>
+                </ul>
+        </div>
+    </div>
+    <h1>Bem-vindo à nossa Escola!</h1>
+    <p>Estamos animados em compartilhar com vocês as nossas plataformas digitais onde você pode acompanhar todas as
+        novidades e atividades da nossa escola. Não deixe de seguir, curtir e compartilhar!</p>
+
+    <p>📸 <strong>Instagram da Escola</strong>: Siga-nos no Instagram para ver fotos e vídeos das nossas atividades
+        diárias, eventos especiais e muito mais! <a href="https://www.instagram.com/escolahumbertobezerra/"
+            target="_blank">@escolahumbertobezerra</a></p>
+
+    <p>📻 <strong>Rádio da Escola</strong>: Ouça nossa rádio escolar para se manter atualizado com as últimas notícias,
+        músicas e programas especiais! <a href="https://zeno.fm/player/hb-conecta" target="_blank">Rádio Escola
+            Exemplo</a></p>
+
+    <p>📝 <strong>Blog da Escola</strong>: Leia nosso blog para artigos interessantes, dicas de estudo e muito mais! <a
+            href="https://www.eemticelhb.blogspot.com" target="_blank">Blog da Escola</a></p>
+
+            <footer>
+                <p>
+                    <a href="https://zeno.fm/player/hb-conecta" target="_blank">Rádio</a> |
+                    <a href="https://www.instagram.com/escolahumbertobezerra/" target="_blank">Instagram</a>
+                </p>
+                <p>Todos os direitos reservados a Escola E.E.M.T.I. CEL. Humberto Bezerra</p>
+            </footer>
+</body>
+
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu-list').classList.toggle('show');
+    });
+</script>
+
+</html>
