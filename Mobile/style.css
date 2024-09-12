@@ -1,9 +1,4 @@
-/* Reset básico para garantir consistência entre navegadores */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Estilização geral do corpo */
 body {
@@ -161,6 +156,5 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
->>>>>>> 64272902bf1e28a4f7a520b274771d0143f967f3
 }
 /* Reset básico para garantir consistência entre navegadores */
