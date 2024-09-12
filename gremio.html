@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBlog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0px;
+            color: #333;
+        }
+        /* Estilização do topo */
+.topo {
+    background-color: #008000; /* Verde */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.topo h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.menu {
+    position: relative;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+
+}
+.menu-list li {
+    margin: 0 15px;
+}
+.menu-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.menu-list a:hover {
+    background-color: #555;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-list li {
+        margin: 0px 0;
+    }
+    .menu-list.show {
+        display: flex;
+    }
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #ffa500; /* Laranja */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff8c00; /* Laranja escuro */
+}
+
+/* Estilização do texto do topo */
+.texto {
+    margin-bottom: 20px;
+}
+        .paragrafo {
+            text-align: center;
+        }
+        .paragrafo p {
+            margin: 0;
+            padding: 0;
+        }
+        .paragrafo b {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .paragrafo img {
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .contact-info {
+            margin: 15px 0;
+        }
+        .contact-info img {
+            margin: 10px;
+        }
+        .contact-info b {
+            margin-bottom: 10px;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="topo">
+        <div class="texto">
+            <h1>HB Conectado</h1>
+            <nav class="menu">
+                <div class="menu-toggle" id="menu-toggle">
+                    ☰
+                </div>
+                <ul class="menu-list" id="menu-list">
+                    <li><a class="button" href="index.html">Inicio</a></li>
+                    <li><a class="button" href="corpodocente.html">Corpo Docente</a></li>
+                    <li><a class="button" href="gremio.html">Grêmio</a></li>
+                    <li><a class="button" href="comissões.html">Comissões</a></li>
+                    <li><a class="button" href="quemsomos.html">Quem somos?</a></li>
+                    <li><a class="button" href="redes.html">Nossa Redes Sociais</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="paragrafo">
+        <div class="contact-info">
+            <b>Presidente</b>
+            <p>
+                ANNA LOUYSE RODRIGUES DO NASCIMENTO<br>
+                <a href="""></a>
+            </p>
+            <br><br>
+            <b>VICE PRESIDENTE</b>
+            <ul>
+                <li>VICTOR EMANUEL FEITOSA BARBOSA<br><a href=""></a></li>
+            
+            </ul>
+            <br>
+            <b>SECRETÁRIA</b>
+            <H5>SECRETARIA GERAL</H3>
+            <p>
+                EDUARDA LEANDRO DA SILVA<br>
+                <a href=""></a>
+            </p>
+            <H5>1° SECRETARIA</H5>
+            <p>CÍNTIA MARCELINO BRILHANTE</p>
+            <br>
+            <b>TESOUREIRO</b>
+            <H5>TESOUREIRO GERAL</H3>
+            <p>
+                GABRIEL HOLANDA CUNHA<br>
+                <a href=""></a>
+            </p>
+            <H5>1° TESOUREIRA</H5>
+            <p>KAROLAYNE MARQUES PATRÍCIO</p>
+            <br>
+            <b>DIRETORA DE POLÍTICAS SOCIAIS</b>
+            <p>
+                ANTÔNIA MARIANE SOUSA LOPES<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE COMUNICAÇÃO</b>
+            <p>
+                MONIQUE ANDRADE FERNADES<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE CULTURA</b>
+            <p>
+                QUEREM VÍTORIA<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETOR DE ESPORTES</b>
+            <p>
+                ITALO DE SOUSA BRILHANTE<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE MEIO AMBIENTE</b>
+            <p>
+                ISADORA MARA DOS SANTOS DA PAZ<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE POLÍTICAS EDUCACIONAIS E RENDIMENTO</b>
+            <p>
+                IZADORA MARIA DE CASTRO PAULINO<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE DIVERSIDADE DE GENERO</b>
+            <p>
+                ANA LUIZA SILVA SOARES<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>DIRETORA DE RELAÇÕES ÉTNICOS-RACIAIS</b>
+            <p>
+                YOHANA YVILA NUNES LIMA<br>
+                <a href="mailto:"></a>
+            </p>
+            <br>
+            <b>SUPLENTE</b>
+            <p>
+                <a href="mailto:"></a>
+               GEOVANA PAULO FERREIRA<br>
+            </p>
+            <br>
+            
+            
+        </div>
+    </div>
+    <footer>
+        <p>
+            <a href="https://zeno.fm/player/hb-conecta" target="_blank">Rádio</a> |
+            <a href="https://www.instagram.com/escolahumbertobezerra/" target="_blank">Instagram</a>
+        </p>
+        
+        Contato Institucional<a href="tel:+5588997017089">+55 (88) 9 9701-7089</a> | 
+         Email para contato:<a href="mailto:23102020@prof.ce.gov.br">23102020@prof.ce.gov.br</a>
+         <p>Todos os direitos reservados a Escola E.E.M.T.I. CEL. Humberto Bezerra</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu-list').classList.toggle('show');
+        });
+    </script>
+</body></html>
