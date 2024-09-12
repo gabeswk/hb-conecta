@@ -27,6 +27,12 @@ body {
 .topo h1 {
     margin-bottom: 20px;
     font-size: 1.8em;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 
 .button {
@@ -87,4 +93,25 @@ body {
 .grid-item p {
     font-size: 0.9em;
     color: #555;
+}
+
+footer {
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
