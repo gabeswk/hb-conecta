@@ -163,7 +163,7 @@
                 <a href=""></a>
                 <style>
                     .img1{
-                        height: 200px;
+                        width: 20%;
                     }
                 </style>
                 <img src="assets/prevenção.jpeg" class="img1">
@@ -198,6 +198,18 @@
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
             document.getElementById('menu-list').classList.toggle('show');
+
         });
+
+                    // Função para detectar se o dispositivo é mobile
+                    function isMobile() {
+                return /Mobi|Android/i.test(navigator.userAgent);
+            }
+    
+            // Se for mobile, altera o tamanho da imagem
+            if (isMobile()) {
+                document.querySelector('.img1').style.width = '5%';
+            }
     </script>
+
 </body></html>
